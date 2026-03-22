@@ -1,6 +1,6 @@
 # Finance Analyst Bot
 
-Бот запущен и доступен по ссылке: [@finance_managerr_bot](https://telegram.me/finance_managerr_bot)
+Бот запущен и доступен по ссылке: https://t.me/finance_managerr_bot
 
 Данный проект официально развернут на удаленном VPS сервере и работает 24/7.
 
