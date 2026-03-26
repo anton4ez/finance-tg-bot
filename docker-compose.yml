@@ -8,6 +8,7 @@ services:
       - pgdata:/var/lib/postgresql/data
 
   bot:
+    build: .
     image: anton4ez/finance_bot:v1
     restart: always
     env_file:
