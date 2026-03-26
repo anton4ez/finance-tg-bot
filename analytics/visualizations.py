@@ -1,9 +1,8 @@
 import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import io
 
-
-matplotlib.use('Agg')
 
 def create_pie_chart(stats: list[tuple[str, int]]) -> io.BytesIO:
     """Создает круговую диаграмму из списка кортежей [(Категория, Сумма), ...]"""

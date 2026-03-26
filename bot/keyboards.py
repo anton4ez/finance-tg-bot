@@ -1,16 +1,6 @@
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
 
-categories_kb = ReplyKeyboardMarkup(
-    keyboard=[
-        [KeyboardButton(text="Еда"), KeyboardButton(text="Транспорт")],
-        [KeyboardButton(text="Развлечения"), KeyboardButton(text="Супермаркет")],
-        [KeyboardButton(text="Коммуналка"), KeyboardButton(text="Другое")],
-    ],
-    resize_keyboard=True,
-    input_field_placeholder="Выберите категорию..."
-)
-
 main_kb = ReplyKeyboardMarkup(
     keyboard=[
         [KeyboardButton(text="Добавить расход")],
@@ -19,4 +9,14 @@ main_kb = ReplyKeyboardMarkup(
     ],
     resize_keyboard=True,
     input_field_placeholder="Выбери действие..."
+)
+
+categories_kb = ReplyKeyboardMarkup(
+    keyboard=[
+        [KeyboardButton(text="Еда"), KeyboardButton(text="Транспорт")],
+        [KeyboardButton(text="Здоровье"), KeyboardButton(text="Супермаркет")],
+        [KeyboardButton(text="Коммуналка"), KeyboardButton(text="Развлечения")]
+    ],
+    resize_keyboard=True,
+    input_field_placeholder="Выберите категорию..."
 )
