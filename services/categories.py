@@ -1,8 +1,14 @@
-from sentence_transformers import SentenceTransformer, util
+import os
 import torch
 
+os.environ["OMP_NUM_THREADS"] = "1"
+os.environ["MKL_NUM_THREADS"] = "1"
+torch.set_num_threads(1)
 
-model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
+from sentence_transformers import SentenceTransformer, util
+
+
+model = SentenceTransformer('cointegrated/rubert-tiny2')
 
 categories = [
     "Еда, продукты, ресторан, фастфуд, хавчик, перекус, обед, макдак",
